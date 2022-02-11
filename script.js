@@ -25,7 +25,7 @@ gridContainer.addEventListener('click', function(e){
 if (e.target.id == currentColor){
 result.textContent = "Correct"
 currentColor = getRandomColor()
-guessColor.textContent =  currentColor
+guessColor.textContent = currentColor
 } else{
 result.textContent = "You might be Colour Blind"
 }
