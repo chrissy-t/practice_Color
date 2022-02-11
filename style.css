@@ -1,3 +1,27 @@
 .grid-container{
-     display: grid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows:200px;
+}
+
+div #red{
+ background-color: red;
+}
+
+div #orange{
+ background-color: orange;
+}
+
+div #yellow{
+ background-color: yellow;
+}
+div #green{
+ background-color: green;
+}
+div #blue{
+ background-color: blue;
+}
+
+div #violet{
+ background-color: violet;
 }
