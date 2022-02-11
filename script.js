@@ -6,7 +6,7 @@ Place a message below the grid which asks the user to click on a particular colo
 update the message to let them know if they were correct or not */
 
 var gridContainer= document.querySelector('.gridContainer')
-var guessColor= document.querySelector('colour')
+var guessColor= document.querySelector('#colour')
 
 
 var colorsArray = ["red", "orange", "yellow", "green", "blue", "violet"]
