@@ -6,15 +6,27 @@ Place a message below the grid which asks the user to click on a particular colo
 update the message to let them know if they were correct or not */
 
 var gridContainer= document.querySelector('.gridContainer')
+var guessColor= document.querySelector('colour')
 
-gridContainer.addEventListener('click', function(e){
-
-})
 
 var colorsArray = ["red", "orange", "yellow", "green", "blue", "violet"]
 
-
+//to select random color
 function getRandomColor(){
 var random = Math.floor(Math.random() * colorsArray.length)
 return colorsArray[random]
 }
+
+var currentColor = getRandomColor()
+guessColor.textContent= currentColor
+//get random color to stay on screen
+
+gridContainer.addEventListener('click', function(e){
+if (e.target.id == currentColor){
+result.textContent = "Correct"
+currentColor = getRandomColor()
+guessColor.textContent =  currentColor
+} else{
+result.textContent = "You might be Colour Blind"
+}
+})
